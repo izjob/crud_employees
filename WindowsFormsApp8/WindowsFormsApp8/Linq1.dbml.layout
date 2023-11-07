@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 16.75, 8.5" name="Linq1">
+  <DataContextMoniker Name="/Linq1DataContext" />
+  <nestedChildShapes>
+    <classShape Id="48cfb3d4-29ee-44de-83ba-3dd98e878053" absoluteBounds="3.5, 1.625, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/Linq1DataContext/countries" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a117d6cb-55e2-4e8f-9587-3bdd4dca3506" absoluteBounds="3.515, 2.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b38093d2-da57-4ef4-acb8-167f2f6e5f9b" absoluteBounds="9, 1.625, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/Linq1DataContext/departments" />
+      <nestedChildShapes>
+        <elementListCompartment Id="204848c1-48e2-46c7-b5cd-d90292468f53" absoluteBounds="9.015, 2.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="74bd1e71-3231-45ac-b1cc-5b83533aef92" absoluteBounds="14.5, 1.5, 2, 1.7708968098958333">
+      <DataClassMoniker Name="/Linq1DataContext/dependents" />
+      <nestedChildShapes>
+        <elementListCompartment Id="94b9c655-9a0d-4e80-9b62-77e2c8947728" absoluteBounds="14.515, 1.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1d0b68b-4907-48f6-9743-c11509b8023d" absoluteBounds="11.75, 1, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/Linq1DataContext/employees" />
+      <nestedChildShapes>
+        <elementListCompartment Id="371ca5bd-9caf-43d6-8cf8-26233a1c47ba" absoluteBounds="11.765, 1.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0433b087-8a86-464d-8f7c-6697c6356f2c" absoluteBounds="9, 5.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/Linq1DataContext/jobs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="27a46e4b-271f-41e1-b496-5439c2c7375e" absoluteBounds="9.015, 5.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a755aaa0-5d24-4925-8ee9-13d528481ad1" absoluteBounds="6.25, 1.375, 2, 1.9631982421874998">
+      <DataClassMoniker Name="/Linq1DataContext/locations" />
+      <nestedChildShapes>
+        <elementListCompartment Id="16fad3b2-1b2a-4952-8267-e3081cf18c42" absoluteBounds="6.265, 1.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a9274f53-4254-43ac-b96b-457138bf6f40" absoluteBounds="0.75, 1.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/Linq1DataContext/regions" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a40b21e2-5db0-4fd4-adf8-c086a41c6c51" absoluteBounds="0.765, 2.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(13.75 : 2.38544840494792); (14.5 : 2.38544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Linq1DataContext/employees/employees_dependents" />
+      <nodes>
+        <classShapeMoniker Id="a1d0b68b-4907-48f6-9743-c11509b8023d" />
+        <classShapeMoniker Id="74bd1e71-3231-45ac-b1cc-5b83533aef92" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 2.31814697265625); (11.75 : 2.31814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Linq1DataContext/departments/departments_employees" />
+      <nodes>
+        <classShapeMoniker Id="b38093d2-da57-4ef4-acb8-167f2f6e5f9b" />
+        <classShapeMoniker Id="a1d0b68b-4907-48f6-9743-c11509b8023d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.4592307692308 : 3.73240397135417); (12.4592307692308 : 3.98240397135417); (13.0546153846154 : 3.98240397135417); (13.0546153846154 : 3.73240397135417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/Linq1DataContext/employees/employees_employees" />
+      <nodes>
+        <classShapeMoniker Id="a1d0b68b-4907-48f6-9743-c11509b8023d" />
+        <classShapeMoniker Id="a1d0b68b-4907-48f6-9743-c11509b8023d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 6.28929768880208); (12.0733628846154 : 6.28929768880208); (12.0733628846154 : 3.73240397135417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Linq1DataContext/jobs/jobs_employees" />
+      <nodes>
+        <classShapeMoniker Id="0433b087-8a86-464d-8f7c-6697c6356f2c" />
+        <classShapeMoniker Id="a1d0b68b-4907-48f6-9743-c11509b8023d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 2.31814697265625); (9 : 2.31814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Linq1DataContext/locations/locations_departments" />
+      <nodes>
+        <classShapeMoniker Id="a755aaa0-5d24-4925-8ee9-13d528481ad1" />
+        <classShapeMoniker Id="b38093d2-da57-4ef4-acb8-167f2f6e5f9b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.31814697265625); (6.25 : 2.31814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Linq1DataContext/countries/countries_locations" />
+      <nodes>
+        <classShapeMoniker Id="48cfb3d4-29ee-44de-83ba-3dd98e878053" />
+        <classShapeMoniker Id="a755aaa0-5d24-4925-8ee9-13d528481ad1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.34699625651042); (3.5 : 2.34699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Linq1DataContext/regions/regions_countries" />
+      <nodes>
+        <classShapeMoniker Id="a9274f53-4254-43ac-b96b-457138bf6f40" />
+        <classShapeMoniker Id="48cfb3d4-29ee-44de-83ba-3dd98e878053" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
